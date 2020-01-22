@@ -1,0 +1,90 @@
+body{
+    background: #eeeeee;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container .form .form-header .form-title {
+    font-weight: normal;
+    font-family: sans-serif;
+    color: #b0bec5a2;
+    text-align: center;
+    border-color: #1c5992;
+    padding: 2px;
+}
+
+.container .form {
+    background: rgba(0,0,0,.6);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 3px;
+}
+
+.container .form .form-label {
+    display: block;
+    color: #599ae4;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+}
+
+.container .form .form-input, .form-textarea{
+    background: rgba(102, 132, 151, 0.521);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #4a535f;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.form-input .form-textarea{
+    margin-left: 3px;
+    
+}
+
+::placeholder {
+    color: #ffffff;
+}
+
+.btn{
+    color: white;
+}
+
+pre{
+    float: left;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+.contenedor {
+    margin-top: 30px;
+}
+pre span {
+    position: absolute;
+    right: 0;
+    width: 0;
+    background: #eeeeee;
+    border-left: 1px solid #000;
+    animation: maquina 2s infinite alternate-reverse steps(30);
+}
+
+@keyframes maquina {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}

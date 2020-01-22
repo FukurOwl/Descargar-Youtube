@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="../static/css/estilo.css">
+    <title>Descargalo V.1.0</title>
+</head>
+
+<body>
+    
+    <!-- Formulario de descargas-->
+    <div class="container">
+        <form class='form col s12 z-depth-4' action="{% url 'descargar' %}" method="POST">
+            {% csrf_token %}
+         <div class="form-header">
+             <img src="../static/img/logo.png" alt="Descargalo" class="responsive-img">
+         </div>
+         <label for="link">Link</label>
+         <input type="text" class="form-input form-textarea" name="link" placeholder="   Pega el link de tu video">
+         <br>
+         <select>
+             <option></option>
+         </select>
+         <br>
+         <input type="submit" value="Descargalo" class="btn red lighten-2">
+        </form>
+        <br>
+        <div class="contenedor">
+          <pre>                  ______        _____        __ _                              .  <span>&#160;</span></pre>
+          <pre>                 |  ____|      / ____|      / _| |                             .  <span>&#160;</span></pre>
+          <pre>                 | |____   __ | (___   ___ | |_| |___      ____ _ _ __ ___     .  <span>&#160;</span></pre>
+          <pre>                 |  __\ \ / /  \___ \ / _ \|  _| __\ \ /\ / / _` | '__/ _ \    .  <span>&#160;</span></pre>
+          <pre>                 | |   \ V /   ____) | (_) | | | |_ \ V  V / (_| | | |  __/  _ .  <span>&#160;</span></pre>
+          <pre>                 |_|    \_/   |_____/ \___/|_|  \__| \_/\_/ \__,_|_|  \___| (_).  <span>&#160;</span></pre>
+            
+
+        </div>
+    </div>
+  
+    <!-- Fin formulario de descargas-->
+
+
+    <!-- script --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
